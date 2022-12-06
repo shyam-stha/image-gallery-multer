@@ -5,7 +5,7 @@ import { getImages, postImage, deleteImage } from "../Controllers/ImageControlle
 const router = Router()
 
 
-router.post("/", upload.single('image'), postImage, (res, req) => {
+router.post("/", upload.single('file'), postImage, (res, req) => {
     console.log("Received..")
 })
 

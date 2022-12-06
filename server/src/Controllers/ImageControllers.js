@@ -10,7 +10,7 @@ export const getImages = async (req, res, next) => {
 export const postImage = async (req, res, next) => {
     console.log(req.file)
     res.status(200).json({
-        message: "heelo"
+        message: "File Received ..."
     })
     next()
 }
